@@ -1,1 +1,2 @@
 # nvimconfig
+nvim cofiguration
