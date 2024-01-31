@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 toggleterm.setup({
-    size = 20
+    size = 20,
     open_mapping = [[<c-\>]],
     direction = "float",
     close_on_exit = true,
