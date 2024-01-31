@@ -9,6 +9,7 @@ return{
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
 	"neovim/nvim-lspconfig",
+	{"akinsho/toggleterm.nvim", version = "*", config = true},
 
 	"folke/neodev.nvim",
 	
