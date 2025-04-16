@@ -16,3 +16,7 @@ vim.o.signcolumn = 'yes'
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+
+vim.diagnostic.config({
+  virtual_text = true,
+})
