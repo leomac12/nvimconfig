@@ -29,7 +29,7 @@ capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
 -- mason
 require("mason").setup()
-require("mason-lspconfig").setup_handlers({
+require("mason-lspconfig").setup({
 
 	function(server_name)
 		require("lspconfig")[server_name].setup {
@@ -39,7 +39,7 @@ require("mason-lspconfig").setup_handlers({
 	end,
 
 	["lua_ls"] = function()
-		require("neodev").setup()
+		require("lazydev").setup()
 		require("lspconfig").lua_ls.setup {
 			on_attach = on_attach,
 			capabilities = capabilities,
