@@ -1,9 +1,6 @@
-require("nvim-treesitter.configs").setup {
-	ensure_installed = { "vim", "vimdoc", "lua", "cpp", "c"},
+require('nvim-treesitter').install { 'vim', 'vimdoc', 'lua', 'cpp', 'c' }
 
-	auto_install = false,
-
-	highlight = { enable = true },
-
-	indent = { enable = true },
-}
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'vim', 'vimdoc', 'lua', 'cpp', 'c' },
+  callback = function() vim.treesitter.start() end,
+})
